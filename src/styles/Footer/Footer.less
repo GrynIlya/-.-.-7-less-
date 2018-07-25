@@ -1,0 +1,124 @@
+.Footer{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin-bottom: 10px;
+
+	@media all and (max-width: 1024px) and (min-width: 480px) {
+		width: 100%;
+		margin-bottom: 0;
+		margin-top: 0;
+		display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-around;
+        align-content: space-around;
+	}
+
+	@media all and (max-width: 480px) and (min-width: 320px) {
+		width: 100%;
+		margin-bottom: 0;
+		margin-top: 0;
+		display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-around;
+        align-content: space-around;
+	}															
+
+	&-nav {
+		display: flex;
+		flex-direction:column;
+		width: 300px;
+		border:2px solid #E87A3A;
+		margin:10px;
+	}
+
+	&-navItem{
+		display: flex;
+		justify-content:center;
+		border:1px solid #E87A3A;
+		text-decoration:none;
+		background-color: #3E8CC4;
+		color: black;
+		font-size: 20px;
+		font-style: italic;
+
+		@media all and (max-width: 1024px) and (min-width: 480px) {
+			font-size: 14px;
+    		line-height: 30px;
+		}
+
+		@media all and (max-width: 480px) and (min-width: 320px) {
+			font-size: 10px;
+			line-height: 20px;
+		}
+	}
+
+	&-navItem:hover{
+    	background-color:#E87A3A; 
+    	color:white;  
+ 	}
+
+	&-navItem:active{
+  		box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+	}
+						
+	&-navItemLogo{
+		height:110px;
+		
+		@media all and (max-width: 1024px) and (min-width: 480px) {
+		height: 100px;
+ 		}
+		@media all and (max-width: 480px) and (min-width: 320px) {
+			height: 70px;
+ 		}
+	}
+
+	&-containerLink{
+		display: flex;
+		flex-direction:row;
+		width: 200px;
+		margin-top:30px;
+	}
+
+	&-containerLinkInstagram{
+		margin:10px;
+		font-size: 50px;
+		color: #3E8CC4;
+	}
+
+	&-containerLinkInstagram:hover {
+		color: #E87A3A;
+	}
+
+	&-containerLinkFacebook{
+		font-size: 50px;
+		margin:10px;
+		color: #3E8CC4;
+	}
+
+	&-containerLinkFacebook:hover{
+		color: #E87A3A;
+	}
+
+	&-containerLinkTwitter{
+		font-size: 50px;
+		margin:10px;
+		color: #3E8CC4;
+	}
+
+	&-containerLinkTwitter:hover{
+		color: #E87A3A;
+	}
+}
+
+
+
+
+
+
+
+
+

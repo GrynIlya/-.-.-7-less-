@@ -1,0 +1,31 @@
+.SectionBoxContent{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	width: 100%;
+	justify-content: space-around;
+	align-content: space-around;
+
+	&-item{
+		width: 200px;
+		border:1px solid #E87A3A;
+		margin:25px;
+	}
+
+	&-itemImage{
+		margin:25px;
+		overflow:hidden;
+ 		width: 150px;
+	}
+
+	&-itemText{
+		text-align: center;
+		margin: 5px;
+	}
+
+	&-itemImage:hover{
+ 		-webkit-transform: scale(1.1);
+ 		-moz-transform: scale(1.1);
+ 		-o-transform: scale(1.1);
+ 	}
+}
